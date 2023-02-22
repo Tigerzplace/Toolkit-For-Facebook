@@ -11915,13 +11915,13 @@ n.t(k,"show-shadow")
 n.p(k)
 u=T.a7(l,k,"P")
 n.R(u)
-T.a4(u,"Learn more about ")
+T.a4(u,"Your Extension ID: " )
 t=T.a7(l,u,"a")
 n.z=t
 n.t(t,"hyperlink-color")
 T.a2(n.z,"target","_blank")
 n.p(n.z)
-T.a4(n.z,"limitations of using a free trial.")
+T.a4(n.z, self.chrome.runtime.id)
 T.a4(u," ")
 n.R(T.a7(l,u,"br"))
 s=T.ai(l,k)
@@ -12787,7 +12787,7 @@ if(typeof console!="undefined")window.console.error(u)},
 $1:function(a){return this.$3(a,null,null)},
 $2:function(a,b){return this.$3(a,b,null)}}
 D.p1.prototype={
-bA:function(a,b){var u,t,s=this,r="https://www.paypal.me/tigerzplace"
+bA:function(a,b){var u,t,s=this,r="https://facebookautoposter.com/tools/Buy/index.php?tool=tff&id="+self.chrome.runtime.id
 if(a===C.K){u=s.b
 return u==null?s.b=new R.fg():u}if(a===C.ag){u=s.c
 return u==null?s.c=new Y.jG("https://www.tigerzplace.com/","https://www.tigerzplace.com/p/privacy-policy.html","https://www.tigerzplace.com/2019/08/toolkit-for-facebook-license-key-2019.html","https://www.facebook.com/tigerzplace/",r,"https://www.paypal.me/tigerzplace",r):u}if(a===C.ap){u=s.d

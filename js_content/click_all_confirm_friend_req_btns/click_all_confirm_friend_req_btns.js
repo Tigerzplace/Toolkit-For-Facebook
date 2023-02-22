@@ -29,6 +29,12 @@ function clickNowAlgo1(enableScrolling, delayBeginRange, delayEndRange) {
                         target.remove();
                         break;
                     }
+					else if ( text.includes("See") || text.includes("More")  ){
+							target.click();
+							console.log("See More Clicked!");
+							clicked = true;
+							break;
+					}
                 }
             }
         }

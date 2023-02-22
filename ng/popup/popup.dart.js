@@ -21904,7 +21904,7 @@
           _this._product_title_template$_el_0.href = $.appViewUtils.sanitizer.sanitizeUrl$1(_s35_);
           _this._product_title_template$_expr_0 = _s35_;
         }
-        _this._textBinding_1.updateText$1("TFF Premium v4.1.4");
+        _this._textBinding_1.updateText$1("TFF Premium v4.1.5");
         _this._textBinding_4.updateText$1("~ by Tigerzplace");
       }
     };

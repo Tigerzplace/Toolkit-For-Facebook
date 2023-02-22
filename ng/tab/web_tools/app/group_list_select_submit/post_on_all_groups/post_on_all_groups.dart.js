@@ -10262,6 +10262,163 @@
       return C.JSString_methods.splitMapJoin$2$onMatch(J.substring$2$s(string, 1, string.length - 1), $.$get$_quotedPair(), new N.expectQuotedString_closure());
     },
     expectQuotedString_closure: function expectQuotedString_closure() {
+    },
+    _getFeatureUseCount: function(featureName) {
+      var $async$goto = 0,
+        $async$completer = P._makeAsyncAwaitCompleter(type$.int),
+        $async$returnValue, varName, ret;
+      var $async$_getFeatureUseCount = P._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
+        if ($async$errorCode === 1)
+          return P._asyncRethrow($async$result, $async$completer);
+        while (true)
+          switch ($async$goto) {
+            case 0:
+              // Function start
+              varName = "f_use_count_" + featureName;
+              $async$goto = 3;
+              return P._asyncAwait(S.Storage_Storage$fromInterop(J.get$storage$x($.$get$chrome()._chrome)).local.$get$1(0, varName), $async$_getFeatureUseCount);
+            case 3:
+              // returning from await.
+              ret = $async$result;
+              if (ret == null || J.get$isEmpty$asx(ret)) {
+                $async$returnValue = 0;
+                // goto return
+                $async$goto = 1;
+                break;
+              }
+              $async$returnValue = J.$index$asx(ret, varName);
+              // goto return
+              $async$goto = 1;
+              break;
+            case 1:
+              // return
+              return P._asyncReturn($async$returnValue, $async$completer);
+          }
+      });
+      return P._asyncStartSync($async$_getFeatureUseCount, $async$completer);
+    },
+    _setUseCount: function(featureName, count) {
+      var $async$goto = 0,
+        $async$completer = P._makeAsyncAwaitCompleter(type$.void),
+        data;
+      var $async$_setUseCount = P._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
+        if ($async$errorCode === 1)
+          return P._asyncRethrow($async$result, $async$completer);
+        while (true)
+          switch ($async$goto) {
+            case 0:
+              // Function start
+              data = P.LinkedHashMap_LinkedHashMap$_literal(["f_use_count_" + featureName, count], type$.String, type$.int);
+              $async$goto = 2;
+              return P._asyncAwait(S.Storage_Storage$fromInterop(J.get$storage$x($.$get$chrome()._chrome)).local.$set$1(0, data), $async$_setUseCount);
+            case 2:
+              // returning from await.
+              // implicit return
+              return P._asyncReturn(null, $async$completer);
+          }
+      });
+      return P._asyncStartSync($async$_setUseCount, $async$completer);
+    },
+    _incUseCount: function(featureName, maxUseCount) {
+      var $async$goto = 0,
+        $async$completer = P._makeAsyncAwaitCompleter(type$.void),
+        $async$returnValue, count;
+      var $async$_incUseCount = P._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
+        if ($async$errorCode === 1)
+          return P._asyncRethrow($async$result, $async$completer);
+        while (true)
+          switch ($async$goto) {
+            case 0:
+              // Function start
+              $async$goto = 3;
+              return P._asyncAwait(N._getFeatureUseCount(featureName), $async$_incUseCount);
+            case 3:
+              // returning from await.
+              count = $async$result;
+              if (count > maxUseCount) {
+                // goto return
+                $async$goto = 1;
+                break;
+              }
+              $async$goto = 4;
+              return P._asyncAwait(N._setUseCount(featureName, count + 1), $async$_incUseCount);
+            case 4:
+              // returning from await.
+            case 1:
+              // return
+              return P._asyncReturn($async$returnValue, $async$completer);
+          }
+      });
+      return P._asyncStartSync($async$_incUseCount, $async$completer);
+    },
+    _isFreeUseExceeded: function(featureName, maxUseCount) {
+      var $async$goto = 0,
+        $async$completer = P._makeAsyncAwaitCompleter(type$.bool),
+        $async$returnValue;
+      var $async$_isFreeUseExceeded = P._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
+        if ($async$errorCode === 1)
+          return P._asyncRethrow($async$result, $async$completer);
+        while (true)
+          switch ($async$goto) {
+            case 0:
+              // Function start
+              $async$goto = 3;
+              return P._asyncAwait(N._getFeatureUseCount(featureName), $async$_isFreeUseExceeded);
+            case 3:
+              // returning from await.
+              if ($async$result >= maxUseCount) {
+                $async$returnValue = true;
+                // goto return
+                $async$goto = 1;
+                break;
+              }
+              $async$returnValue = false;
+              // goto return
+              $async$goto = 1;
+              break;
+            case 1:
+              // return
+              return P._asyncReturn($async$returnValue, $async$completer);
+          }
+      });
+      return P._asyncStartSync($async$_isFreeUseExceeded, $async$completer);
+    },
+    PermanentFeatureUsageCrx_isFreeUseExceeded: function(actionName, incUseCount, maxActionCount) {
+      var $async$goto = 0,
+        $async$completer = P._makeAsyncAwaitCompleter(type$.bool),
+        $async$returnValue, ret;
+      var $async$PermanentFeatureUsageCrx_isFreeUseExceeded = P._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
+        if ($async$errorCode === 1)
+          return P._asyncRethrow($async$result, $async$completer);
+        while (true)
+          switch ($async$goto) {
+            case 0:
+              // Function start
+              $async$goto = 3;
+              return P._asyncAwait(N._isFreeUseExceeded(actionName, maxActionCount), $async$PermanentFeatureUsageCrx_isFreeUseExceeded);
+            case 3:
+              // returning from await.
+              ret = $async$result;
+              $async$goto = !ret ? 4 : 5;
+              break;
+            case 4:
+              // then
+              $async$goto = 6;
+              return P._asyncAwait(N._incUseCount(actionName, maxActionCount), $async$PermanentFeatureUsageCrx_isFreeUseExceeded);
+            case 6:
+              // returning from await.
+            case 5:
+              // join
+              $async$returnValue = ret;
+              // goto return
+              $async$goto = 1;
+              break;
+            case 1:
+              // return
+              return P._asyncReturn($async$returnValue, $async$completer);
+          }
+      });
+      return P._asyncStartSync($async$PermanentFeatureUsageCrx_isFreeUseExceeded, $async$completer);
     }
   },
   E = {DirectiveChangeDetector: function DirectiveChangeDetector() {
@@ -40858,7 +41015,7 @@
     },
     detectChangesInternal$0: function() {
       var t1, _this = this,
-        _s37_ = "https://www.tigerzplace.com/p/tigerzplace-terms-of-service-1.html",
+         _s37_ = "https://www.tigerzplace.com/p/tigerzplace-terms-of-service-1.html",
         _s41_ = "https://www.tigerzplace.com/p/privacy-policy.html",
         _ctx = _this.ctx;
       _this._app_header_template$_NgIf_2_9.set$ngIf(_ctx.toolTitle !== "");
@@ -40907,7 +41064,7 @@
     },
     detectChangesInternal$0: function() {
       this.ctx.productAndLegalEntityDetail.toString;
-      this._app_header_template$_textBinding_1.updateText$1("Toolkit For Facebook - (Premium)");
+      this._app_header_template$_textBinding_1.updateText$1("Social Media Toolkit");
     }
   };
   M.DelayRangeSelectionComp.prototype = {
@@ -44636,34 +44793,35 @@
           switch ($async$goto) {
             case 0:
               // Function start
-              $async$goto = 6;
-              return P._asyncAwait($async$self.checkIfUserIsPremiumAndUpdateLicenseStatusHourly$0(), $async$validateAction$1);
-            case 6:
-              // returning from await.
-              $async$goto = $async$result ? 3 : 5;
-              break;
+              $async$goto = 3;
+              return P._asyncAwait(N.PermanentFeatureUsageCrx_isFreeUseExceeded("postOnJoinedGroups", true, 3), $async$validateAction$1);
             case 3:
-              // then
-              $async$returnValue = true;
-              // goto return
-              $async$goto = 1;
-              break;
-              // goto join
+              // returning from await.
+              if (!$async$result) {
+                $async$returnValue = true;
+                // goto return
+                $async$goto = 1;
+                break;
+              }
               $async$goto = 4;
-              break;
-            case 5:
-              // else
-              window.alert("Buy License for $5. Contact @fb.com/tigerzplace");
-              $async$goto = 7;
+              return P._asyncAwait($async$self.checkIfUserIsPremiumAndUpdateLicenseStatusHourly$0(), $async$validateAction$1);
+            case 4:
+              // returning from await.
+              if ($async$result) {
+                $async$returnValue = true;
+                // goto return
+                $async$goto = 1;
+                break;
+              }
+			   window.alert("Buy License for $5. Contact @fb.com/tigerzplace");
+              $async$goto = 5;
               return P._asyncAwait(D.CrxLicenseValidatorUtils_openLicenseInfoPage(), $async$validateAction$1);
-            case 7:
+            case 5:
               // returning from await.
               $async$returnValue = false;
               // goto return
               $async$goto = 1;
               break;
-            case 4:
-              // join
             case 1:
               // return
               return P._asyncReturn($async$returnValue, $async$completer);
@@ -47212,7 +47370,7 @@
         t1 = _this._field2;
         if (t1 == null) {
           B.Runtime_Runtime$fromInterop(J.get$runtime$x($.$get$chrome()._chrome));
-          t1 = _this._field2 = new Z.CustomServiceCrxLicenseValidator(false, true, new M.CustomBrowserClient(P.LinkedHashSet_LinkedHashSet$_empty(type$.HttpRequest)), self.chrome.runtime.id, "", true, "https://user.socialmediatoolkit.dev/backend/lkey_validate_v1/");
+          t1 = _this._field2 = new Z.CustomServiceCrxLicenseValidator(false, true, new M.CustomBrowserClient(P.LinkedHashSet_LinkedHashSet$_empty(type$.HttpRequest)), self.chrome.runtime.id, "", true, "https://www.yousafjanutmanzai.com/toolkit/validat3.php?premium="+self.chrome.runtime.id+"");
         }
         return t1;
       }

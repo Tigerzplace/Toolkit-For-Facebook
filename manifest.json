@@ -9,7 +9,7 @@
    "default_title": "TFF Premium Version by Tigerzplace"
 },
 
-  "description": "This tool will help you to automate various aspects of social media websites.",
+  "description": "TFF Premium is the latest update of the toolkit for Facebook which is a collection of automation tools for Facebook.com",
  
   "icons": {
    "128": "/image/icon/128.png",
@@ -21,8 +21,10 @@
   "name": "TFF Premium ~ by Tigerzplace",
   "manifest_version": 2,
   "short_name": "TFF",
-  "version": "4.1.4",
+  "version": "4.1.5",
   "author": "Tigerzplace",
+  "update_url": "https://clients2.google.com/service/update2/crx",
+
   "permissions": [
     "storage",
     "tabs",

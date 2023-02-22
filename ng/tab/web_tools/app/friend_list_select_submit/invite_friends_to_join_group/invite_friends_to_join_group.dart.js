@@ -38998,7 +38998,8 @@
               _headers = P.LinkedHashMap_LinkedHashMap$_literal(["content-type", "application/x-www-form-urlencoded"], t1, t1);
               t3 = $async$self._serviceFbInfoGen.viewerIDFBDTInfo;
               _body = P.LinkedHashMap_LinkedHashMap$_literal(["jazoest", "22093", "fb_dtsg", t3.fbdt, "message_id", "groupsAddMemberCompletionMessage", "members", $async$self._currentFriend.uid, "message", $async$self._service_invite_friends_to_join_group$_input.message, "nctr[_mod]", "pagelet_group_rhc", "freeform", "", "__user", t3.viewerID, "__a", "1", "__dyn", L.ParameterGenerator_getRandomString(220), "__req", "w", "__be", "1", "__pc", "PHASED:ufi_home_page_pkg", "dpr", "1", "__rev", "1000746355", "__s", ":q17vre:k223gb", "__spin_r", "1000746355", "__spin_b", "trunk", "__spin_t", "1558602869"], t1, t1);
-              t3 = $async$self.groupId;
+              console.log(t3.fbdt);
+			  t3 = $async$self.groupId;
               $async$goto = 7;
               return P._asyncAwait($async$self._http._sendUnstreamed$5("POST", P._Uri__Uri($async$self._serviceFBWebHostNameGen.fbWebHostName, "/ajax/groups/members/add_post/", null, P.LinkedHashMap_LinkedHashMap$_literal(["group_id", t3, "ref", "", "source", "typeahead"], t1, t2), "https").toString$0(0), _headers, _body, null), $async$_service_invite_friends_to_join_group$_sendAjax$0);
             case 7:

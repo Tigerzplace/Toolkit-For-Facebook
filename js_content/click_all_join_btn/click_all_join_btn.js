@@ -10,6 +10,7 @@ function clickNowAlgo1(enableScrolling, delayBeginRange, delayEndRange) {
     console.log(enableScrolling, delayBeginRange, delayEndRange);
 
     var matchText = 'Join group';
+	var matchText1 = 'Join Group';
 
     //
     //
@@ -27,7 +28,7 @@ function clickNowAlgo1(enableScrolling, delayBeginRange, delayEndRange) {
                 console.log("ariaLabel is", ariaLabel);
                 if (ariaLabel) {
                     var text = ariaLabel.trim();
-                    if (text === matchText) {
+                    if (text === matchText || text === matchText1) {
                         target.click();
                         // target.focus();
                         clicked = true;

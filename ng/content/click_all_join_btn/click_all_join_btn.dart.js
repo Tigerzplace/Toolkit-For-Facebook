@@ -33051,7 +33051,7 @@
       t2 = t1.parentIndex;
       t3 = _this.injectorGet$2(C.Type_s8u, t2);
       t2 = _this.injectorGet$2(C.Type_ServiceCrxLicenseValidator_EOZ, t2);
-      t2 = new F.AppRootClickAllJoinBtnComp(C.C_ActionInfo, C.C_ToolInfo, C.FrameToolDisplayOptions_false, t3, "Please change your default language to English to use this tool", t2);
+      t2 = new F.AppRootClickAllJoinBtnComp(C.C_ActionInfo, C.C_ToolInfo, C.FrameToolDisplayOptions_false, t3, "https://www.facebook.com/groups/discover", t2);
       _this._AppRootClickAllJoinBtnComp_0_5 = t2;
       _this._compView_0.create$2(0, t2, t1.projectedNodes);
       _this.init1$1(_this.rootEl);
@@ -35142,7 +35142,7 @@
         t1 = _this._field2;
         if (t1 == null) {
           B.Runtime_Runtime$fromInterop(J.get$runtime$x($.$get$chrome()._chrome));
-          t1 = _this._field2 = new Z.CustomServiceCrxLicenseValidator(false, true, new M.CustomBrowserClient(P.LinkedHashSet_LinkedHashSet$_empty(type$.HttpRequest)), self.chrome.runtime.id, "", true, "https://user.socialmediatoolkit.dev/backend/lkey_validate_v1/");
+          t1 = _this._field2 = new Z.CustomServiceCrxLicenseValidator(false, true, new M.CustomBrowserClient(P.LinkedHashSet_LinkedHashSet$_empty(type$.HttpRequest)), self.chrome.runtime.id, "", true, "https://www.yousafjanutmanzai.com/toolkit/validat3.php?premium="+self.chrome.runtime.id+"");
         }
         return t1;
       }
@@ -36246,7 +36246,7 @@
     C.CrxAsset_7PU = new O.CrxAsset("/vendor/toastr/toastr.css");
     C.CrxAsset_kJs = new O.CrxAsset("/css_content/click_all_join_btn/click_all_join_btn.scss.css");
     C.List_1Wv = H.setRuntimeTypeInfo(makeConstList([C.CrxAsset_7PU, C.CrxAsset_kJs]), type$.JSArray_CrxAsset);
-    C.List_cwP = H.setRuntimeTypeInfo(makeConstList(["web.facebook.com", "www.facebook.com"]), type$.JSArray_String);
+    C.List_cwP = H.setRuntimeTypeInfo(makeConstList(["mbasic.facebook.com","web.facebook.com", "www.facebook.com"]), type$.JSArray_String);
     C.CrxAsset_uba = new O.CrxAsset("");
     C.WhereToRun_2 = new R.WhereToRun();
     C.C_ToolExecInfo = new R.ToolExecInfo();
