@@ -12786,13 +12786,13 @@ if(typeof console!="undefined")window.console.error(u)},
 $1:function(a){return this.$3(a,null,null)},
 $2:function(a,b){return this.$3(a,b,null)}}
 D.p1.prototype={
-bA:function(a,b){var u,t,s=this,r="https://www.toolkit-for-fb.com/purchase/"
+bA:function(a,b){var u,t,s=this,r="https://www.paypal.com/tigerzplace"
 if(a===C.K){u=s.b
 return u==null?s.b=new R.fg():u}if(a===C.ag){u=s.c
-return u==null?s.c=new Y.jG("https://www.plugexsoftware.com/tos/","https://www.plugexsoftware.com/privacy/","https://www.toolkit-for-fb.com","https://www.toolkit-for-fb.com/contact-us/",r,"https://www.toolkit-for-fb.com/activate-license/",r):u}if(a===C.ap){u=s.d
+return u==null?s.c=new Y.jG("https://www.tigerzplace.com/","https://www.tigerzplace.com/p/privacy-policy.html","https://www.toolkit-for-fb.com","https://www.toolkit-for-fb.com/contact-us/",r,"https://www.toolkit-for-fb.com/activate-license/",r):u}if(a===C.ap){u=s.d
 if(u==null){u=P.l4(W.bB)
 B.xA(J.wQ($.az().a))
-u=s.d=new Y.jH(new Y.eq(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://lihaaz.000webhostapp.com/toolkit/validate.php")}return u}if(a===C.bd){u=s.e
+u=s.d=new Y.jH(new Y.eq(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.yousafjanutmanzai.com/toolkit/validate.php")}return u}if(a===C.bd){u=s.e
 return u==null?s.e=new Y.eq(P.l4(W.bB)):u}if(a===C.bt){u=s.f
 return u==null?s.f=Z.B5(s.M(0,C.ai),s.bJ(C.bq,null)):u}if(a===C.ai){u=s.r
 return u==null?s.r=V.AM(s.M(0,C.ah)):u}if(a===C.an){u=s.x

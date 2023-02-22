@@ -1,12 +1,12 @@
 {
-   "author": "PlugEx Software",
+   "author": "Tigerzplace",
    "background": {
       "page": "/html_background/background.html"
    },
    "browser_action": {
       "default_icon": "/image/icon/128.png",
       "default_popup": "/ng/popup/popup.html",
-      "default_title": "Toolkit For FB"
+      "default_title": "Toolkit For Facebook"
    },
    "content_scripts": [ {
       "js": [ "/js_content/background/hide_seen.js" ],
@@ -14,7 +14,7 @@
       "run_at": "document_start"
    } ],
    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
-   "description": "Toolkit For FB is a collection of automation tools for Facebook.com.",
+   "description": "Toolkit For FB  is a collection of automation tools for Facebook.com.",
    "icons": {
       "128": "/image/icon/128.png",
       "16": "/image/icon/16.png",
@@ -23,10 +23,10 @@
    },
    
    "manifest_version": 2,
-   "name": "Toolkit For FB by Tigerzplace",
-   "permissions": [ "storage", "*://*.facebook.com/*", "*://*.toolkit-for-fb.com/*", "notifications", "tabs", "contextMenus", "webRequest", "webRequestBlocking" ],
+   "name": "Toolkit For Facebook by Tigerzplace",
+   "permissions": [ "storage", "*://*.facebook.com/*", "*://*.yousafjanutmanzai.com/*", "notifications", "tabs", "contextMenus", "webRequest", "webRequestBlocking" ],
    "short_name": "TFF",
    "update_url": "http://www.localhost",
-   "version": "4.0.0.4",
+   "version": "4.1.2",
    "web_accessible_resources": [ "/ng/content/**/*.html", "/css_content/**/*.css" ]
 }

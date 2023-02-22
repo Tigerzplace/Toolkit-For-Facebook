@@ -1,5 +1,6 @@
 
 {}(function dartProgram(){function copyProperties(a,b){var u=Object.keys(a)
+    
 for(var t=0;t<u.length;t++){var s=u[t]
 b[s]=a[s]}}var z=function(){var u=function(){}
 u.prototype={p:{}}
@@ -7075,7 +7076,7 @@ p.toString
 r=H.ct(p,o,"")
 J.fq(m,new M.bg(S.ED(J.b2(s)),S.ED(r),S.ED(b),!1))}catch(n){H.a0(n)
 continue}}return m},
-O2:function(a){var u=P.a8('\\["BookmarkSeeAllEntsSectionController","init",\\[\\"[\\s\\S]+?"],\\[{[\\s\\S]+?},\\[({[\\s\\S]*?})]]]],define:',!1,!0).d7(0,a),t=u.gS(u).p()
+O2:function(a){var u=P.a8('\\["BookmarkSeeAllEntsSectionController","init",[\\"[\\s\\S]+?"],[{[\\s\\S]+?},\\[({[\\s\\S]*?})]]],',!1,!0).d7(0,a),t=u.gS(u).p()
 if(!t)return""
 if(u.R(0,0)==null)return""
 if(J.ad(u.R(0,0),1)==null||J.ad(u.R(0,0),1).length===0)return""
@@ -21309,7 +21310,7 @@ if(a===C.t)return t.gq9()}return c},
 t:function(){var u,t,s,r,q,p,o,n,m,l,k=this,j=k.b,i=k.e.cx===0,h=j.f,g=k.nk
 if(g!==h)k.nk=k.r.a=h
 if(i){g=k.r.a
-document.title=H.f(g)+" ~ Toolkit For FB"}u=j.x
+document.title=H.f(g)+" ~ Toolkit For FB 2020 Fix:"}u=j.x
 g=k.nl
 if(g!==u)k.nl=k.y.b=u
 if(i)k.y.aL()
@@ -21586,7 +21587,7 @@ u.ch=!0
 u.dy.U(0)}},
 aL:function(){var u=0,t=P.E(-1),s=this
 var $async$aL=P.A(function(a,b){if(a===1)return P.B(b,t)
-while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For FB"
+while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For FB:"
 return P.C(null,t)}})
 return P.D($async$aL,t)}}
 K.pT.prototype={
@@ -21613,7 +21614,7 @@ t.appendChild(o.f.b)
 T.x(t," ~ ")
 T.x(t,"Toolkit For FB")
 T.x(t," by ")
-T.x(t,"Tigerzplace")
+T.x(t,"~Tigerzplace")
 
 s=T.Y(l,u)
 o.q(s,"material-spacer")
@@ -21640,10 +21641,10 @@ if(r==null)r=""
 u.f.ad(r)
 if(s===0){s=u.r
 r=$.dt.c
-s.href=r.hl("https://www.plugexsoftware.com/tos/")
+s.href=r.hl("https://www.tigerzplace.com/p/tigerzplace-terms-of-service-1.html")
 s=u.x
 r=$.dt.c
-s.href=r.hl("https://www.plugexsoftware.com/privacy/")}},
+s.href=r.hl("https://www.tigerzplace.com/p/privacy-policy.html")}},
 $aj:function(){return[R.i3]}}
 S.eH.prototype={}
 Z.wg.prototype={

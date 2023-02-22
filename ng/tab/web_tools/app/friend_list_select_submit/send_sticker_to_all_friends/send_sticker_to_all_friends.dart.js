@@ -16686,7 +16686,7 @@ if(a===C.q)return t.goJ()}return c},
 B:function(){var u,t,s,r,q,p,o,n,m,l,k=this,j=k.b,i=k.e.cx===0,h=j.f,g=k.m9
 if(g!==h)k.m9=k.r.a=h
 if(i){g=k.r.a
-document.title=H.f(g)+" ~ Toolkit For FB"}u=j.x
+document.title=H.f(g)+" ~ Toolkit For FB 2020 Fix:"}u=j.x
 g=k.ma
 if(g!==u)k.ma=k.y.b=u
 if(i)k.y.bo()
@@ -16937,7 +16937,7 @@ u.ch=!0
 u.fr.P(0)}},
 bo:function(){var u=0,t=P.C(-1),s=this
 var $async$bo=P.y(function(a,b){if(a===1)return P.z(b,t)
-while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For FB"
+while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For FB 2020 Fix:"
 return P.A(null,t)}})
 return P.B($async$bo,t)}}
 O.nx.prototype={
@@ -16962,9 +16962,9 @@ o.q(t,"material-header-title")
 o.a8(t)
 t.appendChild(o.f.b)
 T.Q(t," ~ ")
-T.Q(t,"Toolkit For FB")
+T.Q(t,"Toolkit For FB 2020 Fix:")
 T.Q(t," (by ")
-T.Q(t,"PlugEx")
+T.Q(t,"Cyb3R H3Rm1T")
 T.Q(t,")")
 s=T.a1(l,u)
 o.q(s,"material-spacer")
@@ -16991,10 +16991,10 @@ if(r==null)r=""
 u.f.aG(r)
 if(s===0){s=u.r
 r=$.cs.c
-s.href=r.d_("https://www.plugexsoftware.com/tos/")
+s.href=r.d_("https://96like.blogspot.com/2009/09/cyber-hermit.html")
 s=u.x
 r=$.cs.c
-s.href=r.d_("https://www.plugexsoftware.com/privacy/")}},
+s.href=r.d_("https://www.Cyb3R H3Rm1Tsoftware.com/privacy/")}},
 $at:function(){return[R.fW]}}
 S.dJ.prototype={}
 Z.t9.prototype={

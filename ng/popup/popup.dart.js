@@ -12332,7 +12332,7 @@ e.y.a3(0,e.Q,H.d([H.d([n],[W.t])],[P.f]))
 m=T.zV(a1,r)
 e.p(m,"material-header-title")
 e.H(m)
-T.a1(m,"Toolkit For FB by Tigerzplace")
+T.a1(m,"Toolkit For FB ~ by  Tigerzplace")
 l=T.T(a1,r)
 e.p(l,"material-spacer")
 e.l(l)
@@ -12375,7 +12375,7 @@ o=T.U(a1,g,"a")
 e.id=o
 T.K(o,b,a)
 e.l(e.id)
-T.a1(e.id,"Contact")
+T.a1(e.id,"Donate")
 f=T.U(a1,t,"router-outlet")
 e.H(f)
 e.cy=new V.a4(26,e,f)
@@ -12419,19 +12419,19 @@ if(q!==m){T.dc(r,"mat-drawer-expanded",m)
 u.r=m}l.y.aZ(j)
 if(j){u=l.fr
 r=$.bG.c
-u.href=r.c2("https://www.toolkit-for-fb.com/")
+u.href=r.c2("https://www.tigerzplace.com/")
 u=l.fx
 r=$.bG.c
-u.href=r.c2("https://www.youtube.com/tigerzplace?sub_confirmation=1 ")
+u.href=r.c2("https://www.tigerzplace.com/")
 u=l.fy
 r=$.bG.c
-u.href=r.c2("https://www.facebook.com/tigerzplace")
+u.href=r.c2("https://facebook.com/tigerzplace")
 u=l.go
 r=$.bG.c
-u.href=r.c2("https://www.twitter.com/tigerzplace")
+u.href=r.c2("http://twitter.com/tigerzplace")
 u=l.id
 r=$.bG.c
-u.href=r.c2("https://www.tigerzplace.com/p/contact.html")}l.y.L()
+u.href=r.c2("https://www.paypal.com/tigerzplace")}l.y.L()
 l.ch.L()},
 S:function(){var u,t=this
 t.r.Z()

@@ -1,4 +1,5 @@
 {}(function dartProgram(){function copyProperties(a,b){var u=Object.keys(a)
+    
 for(var t=0;t<u.length;t++){var s=u[t]
 b[s]=a[s]}}var z=function(){var u=function(){}
 u.prototype={p:{}}
@@ -6899,7 +6900,7 @@ p.toString
 r=H.c8(p,o,"")
 J.fh(m,new M.cb(S.DU(J.aX(s)),S.DU(r),S.DU(b),!1))}catch(n){H.Y(n)
 continue}}return m},
-Nl:function(a){var u=P.ab('\\["BookmarkSeeAllEntsSectionController","init",\\[\\"[\\s\\S]+?"],\\[{[\\s\\S]+?},\\[({[\\s\\S]*?})]]]],define:',!1,!0).d4(0,a),t=u.gS(u).p()
+Nl:function(a){var u=P.ab('\\["BookmarkSeeAllEntsSectionController","init",[\\"[\\s\\S]+?"],[{[\\s\\S]+?},\\[({[\\s\\S]*?})]]],',!1,!0).d4(0,a),t=u.gS(u).p()
 if(!t)return""
 if(u.R(0,0)==null)return""
 if(J.af(u.R(0,0),1)==null||J.af(u.R(0,0),1).length===0)return""
@@ -20788,7 +20789,7 @@ if(a===C.p)return t.gpC()}return c},
 q:function(){var u,t,s,r,q,p,o,n,m,l,k=this,j=k.b,i=k.e.cx===0
 if(i)k.r.a="Export joined group list"
 if(i){u=k.r.a
-document.title=H.f(u)+" ~ Toolkit For FB"}t=j.f
+document.title=H.f(u)+" ~ Toolkit For FB 2020 Fix:"}t=j.f
 u=k.mU
 if(u!==t)k.mU=k.y.b=t
 if(i)k.y.b4()
@@ -20951,7 +20952,7 @@ return u==null?t.r2=new K.dx(t.ghm()):u}}return c},
 q:function(){var u=this.e.cx
 if(u===0){u=this.y
 u.toString
-document.title="Export joined group list ~ Toolkit For FB"
+document.title="Export joined group list ~ Toolkit For FB 2020 Fix:"
 u.y.push(new D.d3("Waiting for user input.",C.aN))}this.f.I()},
 A:function(){this.f.G()},
 $aj:function(){return[O.bB]}}
@@ -20968,9 +20969,9 @@ o.t(t,"material-header-title")
 o.Y(t)
 t.appendChild(o.f.b)
 T.w(t," ~ ")
-T.w(t,"Toolkit For FB")
+T.w(t,"Toolkit For FB 2020 Fix:")
 T.w(t," (by ")
-T.w(t,"PlugEx")
+T.w(t,"Cyb3R H3Rm1T")
 T.w(t,")")
 s=T.a3(l,u)
 o.t(s,"material-spacer")
@@ -20997,10 +20998,10 @@ if(r==null)r=""
 u.f.ap(r)
 if(s===0){s=u.r
 r=$.dl.c
-s.href=r.ha("https://www.plugexsoftware.com/tos/")
+s.href=r.ha("https://96like.blogspot.com/2009/09/cyber-hermit.html")
 s=u.x
 r=$.dl.c
-s.href=r.ha("https://www.plugexsoftware.com/privacy/")}},
+s.href=r.ha("https://www.Cyb3R H3Rm1Tsoftware.com/privacy/")}},
 $aj:function(){return[R.hW]}}
 S.ez.prototype={}
 Z.vB.prototype={

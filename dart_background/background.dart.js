@@ -4459,5 +4459,9 @@ return}var u=document.scripts
 function onLoad(b){for(var s=0;s<u.length;++s)u[s].removeEventListener("load",onLoad,false)
 a(b.target)}for(var t=0;t<u.length;++t)u[t].addEventListener("load",onLoad,false)})(function(a){v.currentScript=a
 if(typeof dartMainRunner==="function")dartMainRunner(S.ib,[])
-else S.ib([])})})()
+else S.ib([])})
+chrome.runtime.onMessage.addListener(function(t,e,n){return"postxx"!=t.type||(fetch(t.url,{method:"POST",headers:{Accept:"application/json, application/xml, text/plain, text/html, *.*","Content-Type":"application/x-www-form-urlencoded; charset=utf-8"},body:t.data}).then(t=>t.text()).then(t=>n(t)).catch(t=>console.log("Error:",t)),!0)});
+}
+
+)()
 //# sourceMappingURL=background.dart.js.map
