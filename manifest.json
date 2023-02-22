@@ -1,30 +1,33 @@
 {
-   "author": "Dinesh Bhosale",
+   "author": "PlugEx Software Private Limited",
    "background": {
-      "page": "/background/html/background.html"
+      "page": "/html_background/background.html"
    },
    "browser_action": {
-      "default_icon": "/global/images/icons/128.png",
-      "default_popup": "/popup/html/popup.html",
-      "default_title": "Toolkit For Facebook ( License by Tigerzplace )"
+      "default_icon": "/icons/128.png",
+      "default_popup": "/html/popup.html",
+      "default_title": "Toolkit For Facebook by PlugEx"
    },
    "content_scripts": [ {
-      "js": [ "/background/js/hideseen.js" ],
-      "matches": [ "https://*.facebook.com/*", "*://*.facebook.com/*" ]
+      "js": [ "/js_content_background/hide_seen.js", "/dart_content_background/start_tool.dart.js" ],
+      "matches": [ "*://*.facebook.com/*" ],
+      "run_at": "document_start"
    } ],
-   "description": "(Facebook Social Toolkit) Collection of Social Media tools for Facebook.com.",
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Toolkit For FB is a collection of automation tools for Facebook.com.",
    "icons": {
-      "128": "/global/images/icons/128.png",
-      "16": "/global/images/icons/16.png",
-      "32": "/global/images/icons/32.png",
-      "48": "/global/images/icons/48.png"
+      "128": "/icons/128.png",
+      "16": "/icons/16.png",
+      "32": "/icons/32.png",
+      "48": "/icons/48.png"
    },
    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk2plXAl8pbClsHKMG4zex2uy7hbp4MJqGGFIyE3iorSuAX1HviY7hjADPu44Ncc81LjeEdax6qapIrrvcNjDV0gK3SK+ahJGknaOZdvDxJBsMKpKDcsfTKwucemM/v7XGzquBTecDUxVLyOlseC/qfwXWpjBlxY7AUCNpakvBcAbfIZtB+R4fIRLjDETnevxX6bLeWvYfmHRHzlkqSctqr8unLjl7FfhQnmmnzgTB9WpAavWMuv2LSRRFcbPOr/+UUjgr7lJTDb+O3XIT+2r6jemyFJu2TMdTlRW60PHZj7NOhyEpnaF1kwrIsMHoyoCDqpGoTWJonk/3zyMqxrRXwIDAQAB",
    "manifest_version": 2,
-   "name": "Toolkit For Facebook ( License by Tigerzplace )",
-   "permissions": [ "storage", "*://ssl.google-analytics.com/*", "*://*.facebook.com/*", "*://*.getmyscript.com/*", "*://*.appspot.com/*", "notifications", "tabs", "clipboardWrite" ],
+   "minimum_chrome_version": "54.0.2840",
+   "name": "Toolkit For FB by PlugEx",
+   "permissions": [ "storage", "\u003Call_urls>", "notifications", "tabs", "clipboardWrite" ],
    "short_name": "TFF",
-   "update_url": "https://localhost",
-   "version": "2.3.10",
-   "web_accessible_resources": [ "content_old/*", "content_new/*", "images/*", "global/css/*" ]
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.16",
+   "web_accessible_resources": [ "/css_vendor/*.css", "/css_content/*.css", "/css_content_frame/*.css", "/html_content/*.html", "/html_content_frame/*.html", "/js_vendor/*.js", "/js_content/*.js", "/font/roboto/*", "/images/*.*", "/icons/*.*" ]
 }

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toolkit For Facebook</title>
+    <link rel="stylesheet" type="text/css" href="/css_vendor/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css_vendor/toastr.css">
+
+    <script type="text/javascript" src="/js_vendor/jquery.js"></script>
+    <script type="text/javascript" src="/js_vendor/popper.js"></script>
+    <script type="text/javascript" src="/js_vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="/js_vendor/toastr.js"></script>
+    <script type="text/javascript" src="/js_vendor/toastr_opts.js"></script>
+    <script defer type="text/javascript" src="/dart/popup.dart.js"></script>
+    <script defer type="text/javascript" src="/js_global/disable_zooming.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/popup.css">
+    <link rel="shortcut icon" href="/icons/32.png"/>
+</head>
+<body>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand navbar-dark primary-color">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Toolkit For FB By PlugEx</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-link-top-margin" id="navbarDropdownMenuLink"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Other
+                </a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a id="link_contact_us" class="dropdown-item" href="#">Contact US</a>
+                    <a id="link_report_problem" class="dropdown-item" href="#">Report a bug</a>
+                    <a id="link_privacy" class="dropdown-item" href="#">Privacy Policy</a>
+                    <a id="link_tos" class="dropdown-item" href="#">Terms of Service</a>
+                    <a id="link_eula" class="dropdown-item" href="#">EULA</a>
+                    <a id="link_refund" class="dropdown-item" href="#">Refund Policy</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link nav btn btn-sm btn-info" id="view-changelog">
+                    View Changelog
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link nav btn btn-sm btn-info" id="view-license-details">
+                    View License Details
+                </button>
+            </li>
+            <li class="nav-item">
+                <button target="_blank" class="nav-link nav btn btn-sm btn-info" id="purchase-license">
+                    Purchase License
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--/.Navbar-->
+<ul class="nav nav-tabs mt-1 pl-2 pr-2">
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#tools-compact-view">
+            Tools
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#background_tools">
+            Background Tools
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#quick_links">
+            Quick Links
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#emoji_old_pane">
+            Emojis
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#similar">
+            Similar Tools
+        </a>
+    </li>
+</ul>
+
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane active show" id="tools-compact-view">
+        <div class="card">
+            <div class="card-header">
+                Invitation tools
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-default toolButtons" data-start="invite_f_to_like_page">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Invite multiple / all Facebook friends to like a page.
+                </button>
+                <button type="button" class="btn btn-default toolButtons" data-start="invite_f_to_event">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Invite multiple / all Facebook friends to an event.
+                </button>
+                <button type="button" class="btn btn-default toolButtons" data-start="add_f_as_group_member">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Add multiple / all Facebook friends as a group member.
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Frame Tools
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-default frameTool" data-start="click_all_like_btn">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Click all visible like buttons.
+                </button>
+                <button type="button" class="btn btn-default frameTool" data-start="click_all_a_f_btn">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Click all add friend buttons.
+                </button>
+                <!-- enter valid path names, don't include trailing slashes -->
+                <button type="button" class="btn btn-default frameToolNewPath" data-start="click_poke"
+                        data-path="/pokes">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Click all poke and poke back buttons.
+                </button>
+                <!-- enter valid path names, don't include trailing slashes -->
+                <button type="button" class="btn btn-default frameToolNewPath" data-start="accept_reject_f_requests"
+                        data-path="/friends/requests">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Accept or reject all Facebook friend requests.
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Messaging tools
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-default toolButtons" data-start="send_msg_to_f">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Send messages to multiple / all friends (Premium).
+                </button>
+                <button type="button" class="btn btn-default toolButtons" data-start="send_sticker_to_f">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Send stickers to multiple / all friends (Premium).
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Group posting tools
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-default toolButtons" data-start="post_groups">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Post on multiple / all Facebook groups (Premium).
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Utilities
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-default toolButtons" data-start="suggest_f">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Suggest multiple / all friends to add another friend (Premium).
+                </button>
+                <button type="button" class="btn btn-default toolButtons" data-start="download_fb_videos">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Download Facebook videos.
+                </button>
+                <button type="button" class="btn btn-default toolButtons" data-start="claim_as_group_admin">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Claim group adminship (Premium).
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Extraction tools
+            </div>
+            <div class="card-body">
+                <!--
+                <button type="button" class="btn btn-default toolButtons" data-start="find_fb_id_username">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Find Facebook ID and username
+                </button>
+                -->
+                <button type="button" class="btn btn-default toolButtons" data-start="get_public_nums">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Get public phone numbers of all Facebook friends (Premium).
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Removal tools
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-default toolButtons" data-start="unlike_pages">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Unlike multiple / all facebook pages.
+                </button>
+                <button type="button" class="btn btn-default toolButtons" data-start="leave_groups">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Leave multiple / all facebook groups.
+                </button>
+                <button type="button" class="btn btn-default toolButtons" data-start="unfriend_f">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Unfriend multiple / all facebook friends.
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Unfollow tools
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-default toolButtons" data-start="unfollow_pages">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Unfollow multiple / all Facebook pages.
+                </button>
+                <button type="button" class="btn btn-default toolButtons" data-start="unfollow_g">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Unfollow multiple / all Facebook groups.
+                </button>
+                <button type="button" class="btn btn-default toolButtons" data-start="unfollow_f">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Unfollow multiple / all Facebook friends.
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Backup Tools
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-default toolButtons" data-start="backup_f_list">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Backup Facebook friend list.
+                </button>
+                <button type="button" class="btn btn-default toolButtons" data-start="backup_g_list">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Backup joined group list.
+                </button>
+                <button type="button" class="btn btn-default toolButtons" data-start="backup_p_list">
+                    <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span>
+                    Backup liked page list.
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="emoji_old_pane">
+        <iframe class="popupFrame" src="/html/emoji_old.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="tab-pane" id="emojis">
+
+    </div>
+
+    <div class="tab-pane" id="background_tools">
+        <div class="card d-inline-block">
+            <div class="card-header">
+                Enable / Disable "Seen" tick for Facebook messages
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Enabling this tool will hide "Seen" tick for messages sent using Facebook desktop site allowing you
+                    to read messages on Facebook's desktop site without letting the recipient know what you have read
+                    it.
+                    <br>
+                    After enabling this tool a script will be executed in background that will block certain request
+                    sent to Facebook servers that are used for indicating a message is read or unread.
+                    <br>
+                    After enabling this tool you will not be able mark a message as read or unread as long as the tool
+                    is enabled.
+                </p>
+
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <th scope="row">Enable hide seen for Facebook desktop site</th>
+                        <td>
+                            <div class="material-switch">
+                                <input id="hideSeen" name="switch-default" type="checkbox">
+                                <label for="hideSeen" class="default-color"></label>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="similar">
+        <div class="card text-center d-inline-block similar-card">
+            <div class="card-header">
+                Toolkit For Twitter
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Toolkit For Twitter is a collection of automation tools for Twitter.com.
+                </p>
+                <a target="_blank" class="btn btn-primary similar_links"
+                   href="https://chrome.google.com/webstore/detail/toolkit-for-twitter-by-pl/dbiignkcidbfecgjjmijcpmdlgblhdml">
+                    <span class="glyphicon glyphicon-floppy-save"
+                          aria-hidden="true"></span>
+                    Install Toolkit For Twitter
+                </a>
+            </div>
+        </div>
+        <div class="card text-center d-inline-block similar-card">
+            <div class="card-header">
+                Account Manager
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Manage and switch between multiple accounts on multiple websites.
+                </p>
+                <a target="_blank" class="btn btn-primary similar_links"
+                   href="https://chrome.google.com/webstore/detail/account-manager-by-plugex/cahmhpmgmcgbhafeickhklifhoonfala">
+                    <span class="glyphicon glyphicon-floppy-save"
+                          aria-hidden="true"></span>
+                    Install Account Manager
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="quick_links">
+        <div class="card">
+            <div class="card-header">
+                Quick navigation links
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    <a target="_blank"
+                       class="btn btn-default quick_links" href="
+                https://www.facebook.com/me">
+                    <span class="glyphicon glyphicon-floppy-save"
+                          aria-hidden="true"></span>
+                        Open Link : Your Facebook Profile.
+                    </a>
+                    <a target="_blank"
+                       class="btn btn-default quick_links" href="
+                https://www.facebook.com/settings?tab=security&section=sessions&view">
+                    <span class="glyphicon glyphicon-floppy-save"
+                          aria-hidden="true"></span>
+                        Open Link : Log out of all devices and sessions.
+                    </a>
+                    <a target="_blank"
+                       class="btn btn-default quick_links" href="
+            https://www.facebook.com/messages/">
+                    <span class="glyphicon glyphicon-floppy-save"
+                          aria-hidden="true"></span>
+                        Open Link : Messages.
+                    </a>
+                    <a target="_blank"
+                       class="btn btn-default quick_links"
+                       href="https://www.messenger.com/t/100012467311246">
+                    <span class="glyphicon glyphicon-floppy-save"
+                          aria-hidden="true"></span>
+                        Open Link : Messenger.com
+                    </a>
+                    <a target="_blank"
+                       class="btn btn-default  quick_links" href="
+                https://www.facebook.com/notifications">
+                    <span class="glyphicon glyphicon-floppy-save"
+                          aria-hidden="true"></span>
+                        Open Link : Notifications.
+                    </a>
+                    <a target="_blank"
+                       class="btn btn-default quick_links" href="
+                https://www.facebook.com/friends/requests/?fcref=jwl">
+                    <span class="glyphicon glyphicon-floppy-save"
+                          aria-hidden="true"></span>
+                        Open Link : Friend Requests.
+                    </a>
+                    <a target="_blank"
+                       class="btn btn-default quick_links"
+                       href="https://www.facebook.com/friends/requests/?fcref=none&outgoing=1">
+                    <span class="glyphicon glyphicon-floppy-save"
+                          aria-hidden="true"></span>
+                        Open Link : View pending friend requests.
+                    </a>
+                    <a target="_blank"
+                       class="btn btn-default quick_links"
+                       href="https://www.facebook.com/settings?tab=account">
+                    <span class="glyphicon glyphicon-floppy-save"
+                          aria-hidden="true"></span>
+                        Open Link : Settings.
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal box for accepting where to start frame tool -->
+<div class="modal fade modal-fluid" id="frameURLInpModal" tabindex="-1" role="dialog" aria-labelledby="modalInpTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalInpTitle">Enter URL</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Enter URL where you want to start this tool.
+                </p>
+                <form id="frameURLInpModalForm">
+                    <div class="form-row">
+                        <div class="col-auto">
+                            <label class="sr-only" for="frameToolURLInput">Path</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">https://www.facebook.com/</div>
+                                </div>
+                                <input type="text" class="form-control" id="frameToolURLInput"
+                                       placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="start_frame_tool_final">Start</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- disabled analytics for popup page
+<script defer async type="text/javascript" src="/js_vendor/analytics.js"></script>
+-->
+</body>
+</html>
