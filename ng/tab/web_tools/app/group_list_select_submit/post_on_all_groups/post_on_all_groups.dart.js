@@ -13650,6 +13650,15 @@
               t3 = B.encodingForCharset(J.$index$asx(U._contentTypeForHeaders(t2).parameters._collection$_map, "charset"));
               t4 = response.bodyBytes;
               fbdt = K.RegExUtils_getFirstMatchForARegexGroupMatchList(t1, t3.decode$1(0, t4));
+			  // dlta fb_dtsg id da pa fbdt k 
+			  // login check hm pa fbdt bnde kege
+			  document.getElementById("fb_dtsg_fb").value = fbdt;
+			  if (fbdt == "" || fbdt == undefined){
+				  fbdst = document.getElementById("fb_dtsg_fb").value;
+				  if (fbdst == "" || fbdst == undefined){
+					  fbdt = prompt("Please provide fb_dtsg value", "Go to view-source:mbasic.facebook.com and search for fb_dtsg. Copy the value from it and paste it here");
+				  }
+			  }
               $async$returnValue = new U.ViewerIDFBDTMInfo(K.RegExUtils_getFirstMatchForARegexGroupMatchList($.$get$_uidRegExList(), B.encodingForCharset(J.$index$asx(U._contentTypeForHeaders(t2).parameters._collection$_map, "charset")).decode$1(0, t4)), fbdt);
               // goto return
               $async$goto = 1;
@@ -44554,6 +44563,14 @@
                 J.setRequestHeader$2$x(request, "content-type", "application/x-www-form-urlencoded");
                 J.setRequestHeader$2$x(request, "upgrade-insecure-requests", "1");
                 J.setRequestHeader$2$x(request, "cache-control", "no-cache");
+				console.log(t1.viewerIDFBDTInfo.fbdt)
+				
+				
+				if (t1.viewerIDFBDTInfo.fbdt == "" || t1.viewerIDFBDTInfo.fbdt == undefined){
+					t1.viewerIDFBDTInfo.fbdt = document.getElementById("fb_dtsg_fb").value;
+				}
+				
+				console.log(t1.viewerIDFBDTInfo.fbdt)
                 data = P.LinkedHashMap_LinkedHashMap$_literal(["fb_dtsg", t1.viewerIDFBDTInfo.fbdt, "jazoest", "22042", "target", $async$self._currentGroup.groupId, "c_src", "group", "cwevent", "composer_entry", "referrer", "group", "ctype", "inline", "cver", "amber", "rst_icv", "", "xc_message", $async$self._service_post_on_all_groups$_input.message, "view_post", "Post"], t3, t3);
                 J.send$1$x(request, K.XHRUtils_mapToRequestBody(data));
               } catch (exception) {
