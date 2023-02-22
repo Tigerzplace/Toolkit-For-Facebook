@@ -9,18 +9,27 @@ function clickNowAlgo1(enableScrolling, delayBeginRange, delayEndRange) {
     console.log('clickNowAlgo1 called');
     console.log(enableScrolling, delayBeginRange, delayEndRange);
 
+    var matchText = 'Delete';
+
     // final function for clicking
     function rejectSingleClickFinal() {
         var clicked = false;
-        var buttons = document.getElementsByTagName("button");
-        for (var counter = 0; counter < buttons.length; counter++) {
+        var buttons = document.getElementsByTagName("div");
+        for (var counter = 0, length = buttons.length; counter < length; counter++) {
             var target = buttons[counter];
-            var text = target.innerText.trim();
-            if (text == "Delete Request") {
-                target.click();
-                //target.focus();
-                clicked = true;
-                break;
+            if (target) {
+                var ariaLabel = target.getAttribute("aria-label");
+                console.log("ariaLabel is", ariaLabel);
+                if (ariaLabel) {
+                    var text = ariaLabel.trim();
+                    if (text === matchText) {
+                        target.click();
+                        // target.focus();
+                        clicked = true;
+                        target.remove();
+                        break;
+                    }
+                }
             }
         }
         if (clicked) {
@@ -40,6 +49,8 @@ function clickNowAlgo1(enableScrolling, delayBeginRange, delayEndRange) {
         // eslint-disable-next-line no-undef
         disableSubmit();
         if (rejectSingleClickFinal()) {
+            // eslint-disable-next-line no-undef
+            autoClickClose();
             // some button found and it is clicked
             setTimeout(function () {
                 rejectAllFRequestsFinal();

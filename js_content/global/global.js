@@ -1,3 +1,25 @@
+// toastr options used by content files
+if (toastr) {
+    toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": true,
+        "progressBar": true,
+        "positionClass": "toast-bottom-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut",
+    };
+}
+console.log("toastr_opts_content.js loaded");
+
 function randomIntFromInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -42,37 +64,58 @@ function scrollToBottom() {
     window.scrollTo(0, pos + 999999);
 }
 
+function autoClickCloseExit() {
+    clickDivWithAreaLabel('Close');
+    setTimeout(function () {
+        clickDivWithAreaLabel('Exit');
+    }, 1000);
+}
+
 // for automatically clicking close buttons when add button is clicked
 // eslint-disable-next-line no-unused-vars
 function autoClickClose() {
     try {
-        var btnList = document.getElementsByTagName('button');
-        for (var index = 0, len = btnList.length; index < len; index++) {
-            var elem = btnList[index];
-            var elemText = elem.innerText.trim();
-            //console.log(elemText);
-            if (elemText == "Close") {
-                elem.click();
-            }
-        }
-        var btnList2 = document.getElementsByTagName('a');
-        for (var index2 = 0, len2 = btnList2.length; index2 < len2; index2++) {
-            var elem2 = btnList2[index2];
-            var elemText2 = elem2.innerText.trim();
-            //console.log(elemText);
-            if (elemText2 == "Close") {
-                elem2.click();
-            }
-        }
-    } catch (e) {
+        autoClickCloseExit();
+    }catch (e) {
         //
+    }
+}
+
+function clickDivWithAreaLabel(labelName) {
+    var clicked = false;
+    var buttons = document.getElementsByTagName("div");
+    for (var counter = 0, length = buttons.length; counter < length; counter++) {
+        var target = buttons[counter];
+        if (target) {
+            var ariaLabel = target.getAttribute("aria-label");
+            // console.log("ariaLabel is", ariaLabel);
+            if (ariaLabel) {
+                var text = ariaLabel.trim();
+                if (text == labelName) {
+                    target.click();
+                    target.focus();
+                    clicked = true;
+                    target.remove();
+                    break;
+                }
+            }
+        }
+    }
+    if (clicked) {
+        // eslint-disable-next-line no-undef
+        // autoClickClose();
+        // eslint-disable-next-line no-undef
+        // autoClickAllExitButtons();
+        return true;
+    } else {
+        return false;
     }
 }
 
 // for automatically clicking delete buttons
 // eslint-disable-next-line no-unused-vars
 function autoClickDelete() {
-    var deleteButtonText='Delete';
+    var deleteButtonText = 'Delete';
     try {
         var btnList = document.getElementsByTagName('button');
         for (var index = 0, len = btnList.length; index < len; index++) {
@@ -100,61 +143,11 @@ function autoClickDelete() {
 // for automatically clicking delete buttons
 // eslint-disable-next-line no-unused-vars
 function autoClickAllExitButtons() {
-    var deleteButtonText='Exit';
     try {
-        var btnList = document.getElementsByTagName('button');
-        for (var index = 0, len = btnList.length; index < len; index++) {
-            var elem = btnList[index];
-            var elemText = elem.innerText.trim();
-            //console.log(elemText);
-            if (elemText == deleteButtonText) {
-                elem.click();
-            }
-        }
-        var btnList2 = document.getElementsByTagName('a');
-        for (var index2 = 0, len2 = btnList2.length; index2 < len2; index2++) {
-            var elem2 = btnList2[index2];
-            var elemText2 = elem2.innerText.trim();
-            //console.log(elemText);
-            if (elemText2 == deleteButtonText) {
-                elem2.click();
-            }
-        }
-    } catch (e) {
+        autoClickCloseExit();
+    }catch (e) {
         //
     }
-}
-
-// eslint-disable-next-line no-unused-vars
-function isFacebookLanguageEnglish() {
-    var ret = false;
-    if (window.location.host == 'www.facebook.com') {
-        var footer = document.getElementById('pagelet_rhc_footer');
-        if (footer) {
-            var selectedLang = footer.innerText.split('·')[0];
-            if (selectedLang.match('English')) {
-                ret = true;
-            }
-        }
-
-        var match2 = document.documentElement.outerHTML.match('language:"English');
-        if (match2) {
-            ret = true;
-        }
-    }
-
-    if (window.location.host == 'm.facebook.com') {
-        var match = document.documentElement.outerHTML.match('language:"English');
-        if (match) {
-            ret = true;
-        }
-    }
-
-    if (!ret) {
-        alert('Please temporarily change your Facebook language to English to use this tool.');
-    }
-
-    return ret;
 }
 
 // eslint-disable-next-line no-unused-vars
@@ -167,26 +160,26 @@ function sleep(ms) {
 
 // eslint-disable-next-line no-unused-vars
 function removeParentOfClassName(className, shouldNotContainClass) {
-    var outgoingElem=document.getElementsByClassName(className);
-    if(outgoingElem==null || outgoingElem.length==0){
+    var outgoingElem = document.getElementsByClassName(className);
+    if (outgoingElem == null || outgoingElem.length == 0) {
         return;
     }
-    var removedCount=0;
-    for (var index=0, len=outgoingElem.length; index<len; index++){
-        if(outgoingElem[index]==null){
+    var removedCount = 0;
+    for (var index = 0, len = outgoingElem.length; index < len; index++) {
+        if (outgoingElem[index] == null) {
             break;
         }
-        if(shouldNotContainClass!=null){
-            if(outgoingElem[index].className.match(new RegExp(shouldNotContainClass, 'ig'))){
+        if (shouldNotContainClass != null) {
+            if (outgoingElem[index].className.match(new RegExp(shouldNotContainClass, 'ig'))) {
                 console.log('not matched continuing with it');
                 continue;
-            }else {
+            } else {
                 outgoingElem[index].parentElement.remove();
                 removedCount++;
             }
         }
     }
-    if(removedCount!=0){
+    if (removedCount != 0) {
         removeParentOfClassName(className);
     }
 }
@@ -194,32 +187,32 @@ function removeParentOfClassName(className, shouldNotContainClass) {
 // for automatically clicking confirm buttons when add button is clicked
 // eslint-disable-next-line no-unused-vars
 function autoClickConfirm() {
-    if(!confirm){
+    if (!confirm) {
         return;
     }
-    try{
-        var btnList=document.getElementsByTagName('button');
-        for(var index=0, len=btnList.length; index<len; index++){
-            var elem=btnList[index];
-            var elemText=elem.innerText.trim();
+    try {
+        var btnList = document.getElementsByTagName('button');
+        for (var index = 0, len = btnList.length; index < len; index++) {
+            var elem = btnList[index];
+            var elemText = elem.innerText.trim();
             // console.log(elemText);
-            if(elemText=="Confirm"){
+            if (elemText == "Confirm") {
                 elem.click();
                 // var clicked=true;
             }
         }
 
-        var btnList2=document.getElementsByTagName('a');
-        for(var index2=0, len2=btnList2.length; index2<len2; index2++){
-            var elem2=btnList2[index2];
-            var elemText2=elem2.innerText.trim();
+        var btnList2 = document.getElementsByTagName('a');
+        for (var index2 = 0, len2 = btnList2.length; index2 < len2; index2++) {
+            var elem2 = btnList2[index2];
+            var elemText2 = elem2.innerText.trim();
             // console.log(elemText);
-            if(elemText2=="Confirm"){
+            if (elemText2 == "Confirm") {
                 elem2.click();
                 // var clicked=true;
             }
         }
-    }catch(e){
+    } catch (e) {
         //
     }
     // auto click close button if not clicked already
@@ -227,25 +220,3 @@ function autoClickConfirm() {
     setTimeout(autoClickClose, 200);
     // }
 }
-
-// toastr options used by content files
-if (toastr) {
-    toastr.options = {
-        "closeButton": false,
-        "debug": false,
-        "newestOnTop": true,
-        "progressBar": true,
-        "positionClass": "toast-bottom-right",
-        "preventDuplicates": false,
-        "onclick": null,
-        "showDuration": "300",
-        "hideDuration": "1000",
-        "timeOut": "5000",
-        "extendedTimeOut": "1000",
-        "showEasing": "swing",
-        "hideEasing": "linear",
-        "showMethod": "fadeIn",
-        "hideMethod": "fadeOut",
-    };
-}
-console.log("toastr_opts_content.js loaded");

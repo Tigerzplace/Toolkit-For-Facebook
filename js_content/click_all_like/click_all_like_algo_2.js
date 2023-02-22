@@ -13,25 +13,24 @@ async function clickNowAlgo2(enableScrolling, delayBeginRange, delayEndRange) {
 
     var clickableElementList = [];
 
+    var matchText = 'Like';
+
     // final function for clicking
     // eslint-disable-next-line no-unused-vars
     function genClickableElementList() {
-        var buttons = document.getElementsByTagName('a');
-        for (var counter = 0, len = buttons.length; counter < len; counter++) {
+        var buttons = document.getElementsByTagName('div');
+        for (var counter = 0, length = buttons.length; counter < length; counter++) {
             var target = buttons[counter];
-            var attrTestID = target.getAttribute('data-testid');
-            var clickable = false;
-            if (attrTestID != null && attrTestID.match(/UFI2ReactionLink/ig)) {
-                clickable = true;
-            }
-            var liked = false;
-            if (target.getAttribute('aria-pressed') != null && target.getAttribute('aria-pressed').match(/true/ig)) {
-                liked = true;
-            }
-            var text = target.innerText.trim();
-            if (clickable && text == "Like" && liked == false) {
-                clickableElementList.push(target);
-                continue;
+            if (target) {
+                var ariaLabel = target.getAttribute("aria-label");
+                // console.log("ariaLabel is", ariaLabel);
+                if (ariaLabel) {
+                    var text = ariaLabel.trim();
+                    if (text == matchText) {
+                        clickableElementList.push(target);
+                        continue;
+                    }
+                }
             }
         }
     }
@@ -57,9 +56,14 @@ async function clickNowAlgo2(enableScrolling, delayBeginRange, delayEndRange) {
                 // eslint-disable-next-line no-undef
                 scrollToBottom();
             }
-            clickableElementList[index].click();
+            var element=clickableElementList[index];
+            element.click();
+            element.focus();
+            element.remove();
             var tmp = '"Like" button is clicked.';
             toastr.success(tmp);
+            // eslint-disable-next-line no-undef
+            autoClickClose();
             // eslint-disable-next-line no-undef
             await sleep(getDelayInMSUsingInterval(delayBeginRange, delayEndRange));
         }

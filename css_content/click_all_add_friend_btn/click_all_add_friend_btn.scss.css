@@ -1,4 +1,4 @@
-#tff-content-drag-bar {
+#frame-tool-content-drag-bar {
   margin: 0;
   padding: 0;
   border: 0;
@@ -25,7 +25,7 @@
   font-family: Roboto, "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-.tff-content-drag-bar-active {
+.frame-tool-content-drag-bar-active {
   margin: 0;
   padding: 0;
   border: 0;
@@ -43,7 +43,7 @@
   background: #424242 !important;
 }
 
-#tff-content-toolbox-container {
+#frame-tool-content-toolbox-container {
   margin: 0;
   padding: 0;
   border: 0;
@@ -72,7 +72,7 @@
   border-top-left-radius: 10px;
 }
 
-#tff-content-toolbox-iframe {
+#frame-tool-content-toolbox-iframe {
   outline: none;
   border: 0;
   margin: 0;

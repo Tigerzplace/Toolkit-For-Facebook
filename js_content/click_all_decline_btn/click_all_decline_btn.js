@@ -1,3 +1,5 @@
+var declineButtonText = "Decline";
+
 // eslint-disable-next-line no-unused-vars
 function clickNowAlgo1(enableScrolling, delayBeginRange, delayEndRange) {
     // eslint-disable-next-line no-undef
@@ -9,7 +11,7 @@ function clickNowAlgo1(enableScrolling, delayBeginRange, delayEndRange) {
     console.log('clickNowAlgo1 called');
     console.log(enableScrolling, delayBeginRange, delayEndRange);
 
-    var declineButtonText = 'Decline';
+    var matchText = 'Decline';
 
     //
     //
@@ -19,20 +21,25 @@ function clickNowAlgo1(enableScrolling, delayBeginRange, delayEndRange) {
     // final function for clicking
     function startClickAlgo1ButtonFinal() {
         var clicked = false;
-        var buttons = document.getElementsByTagName("a");
-        for (var counter = 0; counter < buttons.length; counter++) {
+        var buttons = document.getElementsByTagName("div");
+        for (var counter = 0, length = buttons.length; counter < length; counter++) {
             var target = buttons[counter];
-            var text = target.innerText.trim();
-            if (text == declineButtonText) {
-                target.click();
-                //target.focus();
-                clicked = true;
-                target.remove();
-                break;
+            if (target) {
+                var ariaLabel = target.getAttribute("aria-label");
+                // console.log("ariaLabel is", ariaLabel);
+                if (ariaLabel) {
+                    var text = ariaLabel.trim();
+                    if (text === matchText) {
+                        target.click();
+                        // target.focus();
+                        clicked = true;
+                        target.remove();
+                        break;
+                    }
+                }
             }
         }
         if (clicked) {
-            autoClickDelete();
             return true;
         } else {
             return false;
@@ -71,7 +78,9 @@ function clickNowAlgo1(enableScrolling, delayBeginRange, delayEndRange) {
         // eslint-disable-next-line no-undef
         disableSubmit();
         if (startClickAlgo1AnchorFinal()) {
-            toastr.success('"'+declineButtonText+'" button is clicked.');
+            // eslint-disable-next-line no-undef
+            autoClickClose();
+            toastr.success('"' + declineButtonText + '" button is clicked.');
             // some button found and it is clicked
             setTimeout(function () {
                 startClickAlgo1();
@@ -81,7 +90,7 @@ function clickNowAlgo1(enableScrolling, delayBeginRange, delayEndRange) {
             // eslint-disable-next-line no-undef
             autoClickDelete();
             // no button found it is not clicked
-            var tmp2 = 'No "'+declineButtonText+'" buttons found for clicking.';
+            var tmp2 = 'No "' + declineButtonText + '" buttons found for clicking.';
             toastr.error(tmp2);
             alert(tmp2);
             // eslint-disable-next-line no-undef

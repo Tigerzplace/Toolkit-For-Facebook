@@ -12,30 +12,34 @@ function clickNowAlgo1(enableScrolling, delayBeginRange, delayEndRange) {
     console.log('clickNowAlgo1 called');
     console.log(enableScrolling, delayBeginRange, delayEndRange);
 
+    var matchText = 'Like';
+  
     // final function for clicking
     function singleClick() {
         var clicked = false;
-        var buttons = document.getElementsByTagName('a');
-        for (var counter = 0; counter < buttons.length; counter++) {
+        var buttons = document.getElementsByTagName("div");
+        for (var counter = 0, length = buttons.length; counter < length; counter++) {
             var target = buttons[counter];
-            var attrTestID = target.getAttribute('data-testid');
-            var clickable = false;
-            if (attrTestID != null && attrTestID.match(/UFI2ReactionLink/ig)) {
-                clickable = true;
-            }
-            var liked = false;
-            if (target.getAttribute('aria-pressed') != null && target.getAttribute('aria-pressed').match(/true/ig)) {
-                liked = true;
-            }
-            var text = target.innerText.trim();
-            if (clickable && text == "Like" && liked == false) {
-                target.click();
-                //  target.focus();
-                clicked = true;
-                break;
+            if(target){
+                var ariaLabel=target.getAttribute("aria-label");
+                // console.log("ariaLabel is", ariaLabel);
+                if(ariaLabel){
+                    var text = ariaLabel.trim();
+                    if (text==matchText) {
+                        target.click();
+                        // target.focus();
+                        clicked = true;
+                        target.remove();
+                        break;
+                    }
+                }
             }
         }
         if (clicked) {
+            // eslint-disable-next-line no-undef
+            autoClickClose();
+            // eslint-disable-next-line no-undef
+            autoClickAllExitButtons();
             return true;
         } else {
             return false;

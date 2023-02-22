@@ -62,5 +62,5 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
         }
     },
     {urls: ['*://*.facebook.com/*']},
-    ['blocking', 'requestHeaders']
+    ['blocking', 'requestHeaders', "extraHeaders"]
 );
