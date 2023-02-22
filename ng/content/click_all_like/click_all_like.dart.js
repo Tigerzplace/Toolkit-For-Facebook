@@ -17304,7 +17304,7 @@ if(a===C.bw){u=s.b
 return u==null?s.b=new F.eo(P.ar(r,r,r,!1,r)):u}if(a===C.bt){u=s.c
 if(u==null){u=P.ne(W.ci)
 B.yf(J.w5($.aE().a))
-u=s.c=new Y.lh(new Y.fQ(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.toolkit-for-fb.com/billing_backend/lkey_validate_v1/")}return u}if(a===C.cM){u=s.d
+u=s.c=new Y.lh(new Y.fQ(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.yousafjanutmanzai.com/toolkit/validate.php")}return u}if(a===C.cM){u=s.d
 return u==null?s.d=new Y.fQ(P.ne(W.ci)):u}if(a===C.cV){u=s.e
 return u==null?s.e=Z.Fq(s.a4(0,C.bm),s.cU(C.cS,r)):u}if(a===C.bm){u=s.f
 return u==null?s.f=V.F1(s.a4(0,C.bl)):u}if(a===C.bq){u=s.r

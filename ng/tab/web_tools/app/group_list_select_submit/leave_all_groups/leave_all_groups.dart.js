@@ -20850,7 +20850,7 @@ if(a===C.q)return t.gpN()}return c},
 q:function(){var u,t,s,r,q,p,o,n,m,l,k,j=this,i=j.b,h=j.e.cx===0,g=i.f,f=j.n1
 if(f!==g)j.n1=j.r.a=g
 if(h){f=j.r.a
-document.title=H.f(f)+" ~ Toolkit For FB 2020 Fix:"}u=i.x
+document.title=H.f(f)+" ~ Toolkit For Fb 4.1.3"}u=i.x
 f=j.n2
 if(f!==u)j.n2=j.y.b=u
 if(h)j.y.aJ()
@@ -21109,7 +21109,7 @@ u.dy.U(0)
 u.ee()}},
 aJ:function(){var u=0,t=P.G(-1),s=this
 var $async$aJ=P.C(function(a,b){if(a===1)return P.D(b,t)
-while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For FB 2020 Fix:"
+while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For Fb 4.1.3"
 return P.E(null,t)}})
 return P.F($async$aJ,t)}}
 K.pI.prototype={
@@ -21134,9 +21134,9 @@ o.t(t,"material-header-title")
 o.X(t)
 t.appendChild(o.f.b)
 T.w(t," ~ ")
-T.w(t,"Toolkit For FB 2020 Fix:")
+T.w(t,"Toolkit For Fb 4.1.3")
 T.w(t," (by ")
-T.w(t,"Cyb3R H3Rm1T")
+T.w(t,"Tigerzplace")
 T.w(t,")")
 s=T.a3(l,u)
 o.t(s,"material-spacer")
@@ -21163,10 +21163,10 @@ if(r==null)r=""
 u.f.aq(r)
 if(s===0){s=u.r
 r=$.dn.c
-s.href=r.hf("https://96like.blogspot.com/2009/09/cyber-hermit.html")
+s.href=r.hf("https://www.tigerzplace.com/")
 s=u.x
 r=$.dn.c
-s.href=r.hf("https://www.Cyb3R H3Rm1Tsoftware.com/privacy/")}},
+s.href=r.hf("https://www.tigerzplace.com/p/privacy-policy.html")}},
 $aj:function(){return[R.i_]}}
 S.eD.prototype={}
 Z.w3.prototype={
@@ -23388,7 +23388,7 @@ if(a===C.aF){u=s.b
 return u==null?s.b=new O.i3(P.dL(W.d6)):u}if(a===C.bV){u=s.c
 if(u==null){u=P.dL(W.d6)
 B.Et(J.Ci($.b5().a))
-u=s.c=new Y.ok(new Y.oj(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.toolkit-for-fb.com/billing_backend/lkey_validate_v1/")}return u}if(a===C.dA){u=s.d
+u=s.c=new Y.ok(new Y.oj(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.yousafjanutmanzai.com/toolkit/validate.php")}return u}if(a===C.dA){u=s.d
 return u==null?s.d=Z.Mv(s.ar(0,C.bP),s.dQ(C.dx,null)):u}if(a===C.bP){u=s.e
 return u==null?s.e=V.M3(s.ar(0,C.bO)):u}if(a===C.bT){u=s.f
 if(u==null){u=new M.nx()

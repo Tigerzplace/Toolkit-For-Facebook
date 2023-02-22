@@ -21593,7 +21593,7 @@ if(a===C.t)return t.gqh()}return c},
 t:function(){var u,t,s,r,q,p,o,n,m,l,k,j,i=this,h=i.b,g=i.e.cx===0,f=h.f,e=i.nq
 if(e!==f)i.nq=i.r.a=f
 if(g){e=i.r.a
-document.title=H.f(e)+" ~ Toolkit For FB 2020 Fix:"}u=h.x
+document.title=H.f(e)+" ~ Toolkit For Fb 4.1.3"}u=h.x
 e=i.nr
 if(e!==u)i.nr=i.y.b=u
 if(g)i.y.aK()
@@ -21896,7 +21896,7 @@ u.ch=!0
 u.dy.V(0)}},
 aK:function(){var u=0,t=P.G(-1),s=this
 var $async$aK=P.C(function(a,b){if(a===1)return P.D(b,t)
-while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For FB 2020 Fix:"
+while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For Fb 4.1.3"
 return P.E(null,t)}})
 return P.F($async$aK,t)}}
 K.pY.prototype={
@@ -21921,9 +21921,9 @@ o.p(t,"material-header-title")
 o.a_(t)
 t.appendChild(o.f.b)
 T.w(t," ~ ")
-T.w(t,"Toolkit For FB 2020 Fix:")
+T.w(t,"Toolkit For Fb 4.1.3")
 T.w(t," (by ")
-T.w(t,"Cyb3R H3Rm1T")
+T.w(t,"Tigerzplace")
 T.w(t,")")
 s=T.Y(l,u)
 o.p(s,"material-spacer")
@@ -21950,10 +21950,10 @@ if(r==null)r=""
 u.f.af(r)
 if(s===0){s=u.r
 r=$.dx.c
-s.href=r.hp("https://96like.blogspot.com/2009/09/cyber-hermit.html")
+s.href=r.hp("https://www.tigerzplace.com/")
 s=u.x
 r=$.dx.c
-s.href=r.hp("https://www.Cyb3R H3Rm1Tsoftware.com/privacy/")}},
+s.href=r.hp("https://www.tigerzplace.com/p/privacy-policy.html")}},
 $aj:function(){return[R.i6]}}
 S.eK.prototype={}
 Z.wf.prototype={
@@ -24178,7 +24178,7 @@ if(a===C.aJ){u=s.b
 return u==null?s.b=new O.ia(P.dS(W.dd)):u}if(a===C.c0){u=s.c
 if(u==null){u=P.dS(W.dd)
 B.EM(J.Cz($.b7().a))
-u=s.c=new Y.oz(new Y.oy(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.toolkit-for-fb.com/billing_backend/lkey_validate_v1/")}return u}if(a===C.dB){u=s.d
+u=s.c=new Y.oz(new Y.oy(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.yousafjanutmanzai.com/toolkit/validate.php")}return u}if(a===C.dB){u=s.d
 return u==null?s.d=Z.MY(s.as(0,C.bV),s.dV(C.dy,null)):u}if(a===C.bV){u=s.e
 return u==null?s.e=V.Mv(s.as(0,C.bU)):u}if(a===C.bZ){u=s.f
 if(u==null){u=new M.nO()

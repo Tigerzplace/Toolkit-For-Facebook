@@ -12332,7 +12332,7 @@ e.y.a3(0,e.Q,H.d([H.d([n],[W.t])],[P.f]))
 m=T.zV(a1,r)
 e.p(m,"material-header-title")
 e.H(m)
-T.a1(m,"Toolkit For FB ~ by  Tigerzplace")
+T.a1(m,"Toolkit For Fb 4.1.3 | Tigerzplace")
 l=T.T(a1,r)
 e.p(l,"material-spacer")
 e.l(l)
@@ -12532,6 +12532,7 @@ d.go=a3
 f=T.eq("License info")
 d.fy.a3(0,a3,H.d([H.d([f],o)],m))
 d.f.a3(0,d.r,H.d([H.d([s,r,h],[W.bM])],m))
+
 a3=d.k3
 u=d.y.e
 q=W.m
@@ -14059,7 +14060,7 @@ if(a===C.V){u=s.b
 return u==null?s.b=new E.fR():u}if(a===C.Z){u=s.c
 if(u==null){u=P.lW(W.bO)
 B.nx(J.iJ($.ai().a))
-u=s.c=new Y.kn(new Y.eR(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.toolkit-for-fb.com/billing_backend/lkey_validate_v1/")}return u}if(a===C.d_){u=s.d
+u=s.c=new Y.kn(new Y.eR(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.yousafjanutmanzai.com/toolkit/validate.php")}return u}if(a===C.d_){u=s.d
 return u==null?s.d=new Y.eR(P.lW(W.bO)):u}if(a===C.t){u=s.e
 return u==null?s.e=Z.Ct(s.F(0,C.x),s.bT(C.aB,null)):u}if(a===C.x){u=s.f
 return u==null?s.f=V.C8(s.F(0,C.au)):u}if(a===C.ay){u=s.r

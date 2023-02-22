@@ -16556,7 +16556,7 @@ if(a===C.v)return t.gnV()}return c},
 C:function(){var u,t,s,r,q,p,o,n,m,l=this,k=l.b,j=l.e.cx===0,i=k.f,h=l.lo
 if(h!==i)l.lo=l.r.a=i
 if(j){h=l.r.a
-document.title=H.f(h)+" ~ Toolkit For FB 2020 Fix:"}u=k.x
+document.title=H.f(h)+" ~ Toolkit For Fb 4.1.3"}u=k.x
 h=l.lp
 if(h!==u)l.lp=l.y.b=u
 if(j)l.y.bo()
@@ -16802,7 +16802,7 @@ u.ch=!0
 u.fr.O(0)}},
 bo:function(){var u=0,t=P.D(-1),s=this
 var $async$bo=P.z(function(a,b){if(a===1)return P.A(b,t)
-while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For FB 2020 Fix:"
+while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For Fb 4.1.3"
 return P.B(null,t)}})
 return P.C($async$bo,t)}}
 O.nm.prototype={
@@ -16827,9 +16827,9 @@ o.t(t,"material-header-title")
 o.ac(t)
 t.appendChild(o.f.b)
 T.Q(t," ~ ")
-T.Q(t,"Toolkit For FB 2020 Fix:")
+T.Q(t,"Toolkit For Fb 4.1.3")
 T.Q(t," (by ")
-T.Q(t,"Cyb3R H3Rm1T")
+T.Q(t,"Tigerzplace")
 T.Q(t,")")
 s=T.a2(l,u)
 o.t(s,"material-spacer")
@@ -16856,10 +16856,10 @@ if(r==null)r=""
 u.f.aG(r)
 if(s===0){s=u.r
 r=$.cM.c
-s.href=r.dK("https://96like.blogspot.com/2009/09/cyber-hermit.html")
+s.href=r.dK("https://www.tigerzplace.com/")
 s=u.x
 r=$.cM.c
-s.href=r.dK("https://www.Cyb3R H3Rm1Tsoftware.com/privacy/")}},
+s.href=r.dK("https://www.tigerzplace.com/p/privacy-policy.html")}},
 $at:function(){return[R.fS]}}
 S.dG.prototype={}
 Z.rX.prototype={
@@ -18667,7 +18667,7 @@ if(a===C.ai){u=s.b
 return u==null?s.b=new O.fV(P.op(W.cw)):u}if(a===C.bv){u=s.c
 if(u==null){u=P.op(W.cw)
 B.zS(J.xI($.aK().a))
-u=s.c=new Y.m6(new Y.m5(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.toolkit-for-fb.com/billing_backend/lkey_validate_v1/")}return u}if(a===C.cO){u=s.d
+u=s.c=new Y.m6(new Y.m5(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.yousafjanutmanzai.com/toolkit/validate.php")}return u}if(a===C.cO){u=s.d
 return u==null?s.d=Z.He(s.a7(0,C.bo),s.cS(C.cL,null)):u}if(a===C.bo){u=s.e
 return u==null?s.e=V.GL(s.a7(0,C.bn)):u}if(a===C.br){u=s.f
 if(u==null){u=new M.lt()

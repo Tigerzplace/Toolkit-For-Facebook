@@ -20807,7 +20807,7 @@ if(a===C.p)return t.gpI()}return c},
 q:function(){var u,t,s,r,q,p,o,n,m,l=this,k=l.b,j=l.e.cx===0,i=k.f,h=l.n_
 if(h!==i)l.n_=l.r.a=i
 if(j){h=l.r.a
-document.title=H.f(h)+" ~ Toolkit For FB 2020 Fix:"}u=k.x
+document.title=H.f(h)+" ~ Toolkit For Fb 4.1.3"}u=k.x
 h=l.n0
 if(h!==u)l.n0=l.y.b=u
 if(j)l.y.aK()
@@ -21050,7 +21050,7 @@ u.ch=!0
 u.dy.U(0)}},
 aK:function(){var u=0,t=P.G(-1),s=this
 var $async$aK=P.C(function(a,b){if(a===1)return P.D(b,t)
-while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For FB 2020 Fix:"
+while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For Fb 4.1.3"
 return P.E(null,t)}})
 return P.F($async$aK,t)}}
 K.pH.prototype={
@@ -21075,9 +21075,9 @@ o.t(t,"material-header-title")
 o.X(t)
 t.appendChild(o.f.b)
 T.w(t," ~ ")
-T.w(t,"Toolkit For FB 2020 Fix:")
+T.w(t,"Toolkit For FB")
 T.w(t," (by ")
-T.w(t,"Cyb3R H3Rm1T")
+T.w(t,"Tigerzplace")
 T.w(t,")")
 s=T.a4(l,u)
 o.t(s,"material-spacer")
@@ -21104,10 +21104,10 @@ if(r==null)r=""
 u.f.aq(r)
 if(s===0){s=u.r
 r=$.dn.c
-s.href=r.he("https://96like.blogspot.com/2009/09/cyber-hermit.html")
+s.href=r.he("https://www.tigerzplace.com/")
 s=u.x
 r=$.dn.c
-s.href=r.he("https://www.Cyb3R H3Rm1Tsoftware.com/privacy/")}},
+s.href=r.he("https://www.tigerzplace.com/p/privacy-policy.html")}},
 $aj:function(){return[R.hZ]}}
 S.eC.prototype={}
 Z.w2.prototype={
@@ -23327,7 +23327,7 @@ if(a===C.aE){u=s.b
 return u==null?s.b=new O.i2(P.dL(W.d6)):u}if(a===C.bV){u=s.c
 if(u==null){u=P.dL(W.d6)
 B.Eq(J.Ce($.b5().a))
-u=s.c=new Y.oj(new Y.oi(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.toolkit-for-fb.com/billing_backend/lkey_validate_v1/")}return u}if(a===C.dA){u=s.d
+u=s.c=new Y.oj(new Y.oi(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.yousafjanutmanzai.com/toolkit/validate.php")}return u}if(a===C.dA){u=s.d
 return u==null?s.d=Z.Mt(s.ar(0,C.bP),s.dQ(C.dx,null)):u}if(a===C.bP){u=s.e
 return u==null?s.e=V.M1(s.ar(0,C.bO)):u}if(a===C.bT){u=s.f
 if(u==null){u=new M.nw()

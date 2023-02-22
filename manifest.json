@@ -27,6 +27,6 @@
    "permissions": [ "storage", "*://*.facebook.com/*", "*://*.yousafjanutmanzai.com/*", "notifications", "tabs", "contextMenus", "webRequest", "webRequestBlocking" ],
    "short_name": "TFF",
    "update_url": "http://www.localhost",
-   "version": "4.1.2",
+   "version": "4.1.3",
    "web_accessible_resources": [ "/ng/content/**/*.html", "/css_content/**/*.css" ]
 }

@@ -17763,7 +17763,7 @@ a5.p(r,"material-header-title")
 a5.a3(r)
 r.appendChild(a5.f.b)
 T.P(r," ~ ")
-T.P(r,"Toolkit For FB 2020 Fix:")
+T.P(r,"Toolkit For Fb 4.1.3")
 q=T.Z(b2,u)
 a5.p(q,"pad-me max-width padding-top-10 center-me")
 a5.m(q)
@@ -18245,7 +18245,7 @@ u.ch=!0
 u.fr.N(0)}},
 bb:function(){var u=0,t=P.D(-1),s=this
 var $async$bb=P.y(function(a,b){if(a===1)return P.A(b,t)
-while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For FB 2020 Fix:"
+while(true)switch(u){case 0:document.title=s.f+" ~ Toolkit For Fb 4.1.3"
 return P.B(null,t)}})
 return P.C($async$bb,t)}}
 O.o8.prototype={
@@ -20106,7 +20106,7 @@ if(a===C.ak){u=s.b
 return u==null?s.b=new O.hb(P.pf(W.cE)):u}if(a===C.bC){u=s.c
 if(u==null){u=P.pf(W.cE)
 B.Bk(J.zc($.aO().a))
-u=s.c=new Y.mV(new Y.mU(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.toolkit-for-fb.com/billing_backend/lkey_validate_v1/")}return u}if(a===C.d_){u=s.d
+u=s.c=new Y.mV(new Y.mU(u),self.chrome.runtime.id,"ohomidodlpoenacipejadlkkojohndgk","https://www.yousafjanutmanzai.com/toolkit/validate.php")}return u}if(a===C.d_){u=s.d
 return u==null?s.d=Z.J1(s.ac(0,C.bs),s.dh(C.cX,null)):u}if(a===C.bs){u=s.e
 return u==null?s.e=V.Iw(s.ac(0,C.br)):u}if(a===C.bx){u=s.f
 if(u==null){u=new M.ma()
