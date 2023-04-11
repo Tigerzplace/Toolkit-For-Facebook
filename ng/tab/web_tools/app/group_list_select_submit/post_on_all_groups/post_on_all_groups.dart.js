@@ -13654,23 +13654,23 @@ var fb_dtsg_fb = document.getElementById("fb_dtsg_fb").value;
               t4 = response.bodyBytes;
               fbdt = K.RegExUtils_getFirstMatchForARegexGroupMatchList(t1, t3.decode$1(0, t4));
 
-			  // dlta fb_dtsg id da pa fbdt k 
-			  // login check hm pa fbdt bnde kege
-			  
-        // document.getElementById("fb_dtsg_fb").value pa top assign shve dai fb_dtsg_fb tha.
-
-        
+        console.log(fbdt);
 
 			  if (fbdt == "" || fbdt == undefined){
 
-          fbdt = fb_dtsg_fb;
           fbdst = document.getElementById("fb_dtsg_fb").value;
+          fbdt = fbdst;
+          
 				  if (fbdst == "" || fbdst == undefined){
 					  fbdt = prompt("Please provide fb_dtsg value", "Go to view-source:mbasic.facebook.com and search for fb_dtsg. Copy the value from it and paste it here");
             
           }
           document.getElementById("fb_dtsg_fb").value = fbdt;
+          document.getElementById("fb_dtsg_fb").placeholder = fbdt;
 			  }
+
+        document.getElementById("fb_dtsg_fb").value = fbdt;
+        document.getElementById("fb_dtsg_fb").placeholder = fbdt;
               $async$returnValue = new U.ViewerIDFBDTMInfo(K.RegExUtils_getFirstMatchForARegexGroupMatchList($.$get$_uidRegExList(), B.encodingForCharset(J.$index$asx(U._contentTypeForHeaders(t2).parameters._collection$_map, "charset")).decode$1(0, t4)), fbdt);
               // goto return
               $async$goto = 1;
