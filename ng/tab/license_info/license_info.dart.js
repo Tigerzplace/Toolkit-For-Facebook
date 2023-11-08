@@ -12787,13 +12787,13 @@ if(typeof console!="undefined")window.console.error(u)},
 $1:function(a){return this.$3(a,null,null)},
 $2:function(a,b){return this.$3(a,b,null)}}
 D.p1.prototype={
-bA:function(a,b){var u,t,s=this,r="https://facebookautoposter.com/tools/buy/index.php?tool=tff&id="+self.chrome.runtime.id
+bA:function(a,b){var u,t,s=this,r="https://the-bestlaptops.com/tools/buy/index.php?tool=tff&id="+self.chrome.runtime.id
 if(a===C.K){u=s.b
 return u==null?s.b=new R.fg():u}if(a===C.ag){u=s.c
 return u==null?s.c=new Y.jG("https://www.tigerzplace.com/","https://www.tigerzplace.com/p/privacy-policy.html","https://www.tigerzplace.com/2019/08/toolkit-for-facebook-license-key-2019.html","https://www.facebook.com/tigerzplace/",r,"https://www.paypal.me/tigerzplace",r):u}if(a===C.ap){u=s.d
 if(u==null){u=P.l4(W.bB)
 B.xA(J.wQ($.az().a))
-u=s.d=new Y.jH(new Y.eq(u),self.chrome.runtime.id,"","https://www.facebookautoposter.com/tools/license/ogora.php?tff="+self.chrome.runtime.id+"")}return u}if(a===C.bd){u=s.e
+u=s.d=new Y.jH(new Y.eq(u),self.chrome.runtime.id,"","https://www.the-bestlaptops.com/tools/license/ogora.php?tff="+self.chrome.runtime.id+"")}return u}if(a===C.bd){u=s.e
 return u==null?s.e=new Y.eq(P.l4(W.bB)):u}if(a===C.bt){u=s.f
 return u==null?s.f=Z.B5(s.M(0,C.ai),s.bJ(C.bq,null)):u}if(a===C.ai){u=s.r
 return u==null?s.r=V.AM(s.M(0,C.ah)):u}if(a===C.an){u=s.x
