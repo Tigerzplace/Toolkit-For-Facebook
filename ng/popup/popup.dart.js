@@ -21897,14 +21897,14 @@
       },
       detectChangesInternal$0: function() {
         var t1, _this = this,
-          _s35_ = "https://www.socialmediatoolkit.dev/";
+          _s35_ = "https://tigerzplace.com/the-ultimate-toolkit-for-facebook-tff-premium-v4-1-7-also-included-toolkit-apk/";
         _this.ctx.productAndLegalEntityDetail.toString;
         t1 = _this._product_title_template$_expr_0;
         if (t1 !== _s35_) {
           _this._product_title_template$_el_0.href = $.appViewUtils.sanitizer.sanitizeUrl$1(_s35_);
           _this._product_title_template$_expr_0 = _s35_;
         }
-        _this._textBinding_1.updateText$1("TFF Premium v4.1.7.1");
+        _this._textBinding_1.updateText$1("TFF Premium v4.1.7.2");
         _this._textBinding_4.updateText$1("~ by Tigerzplace");
       }
     };
