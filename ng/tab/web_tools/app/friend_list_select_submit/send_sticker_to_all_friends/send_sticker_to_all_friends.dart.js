@@ -32823,8 +32823,8 @@
       },
       detectChangesInternal$0: function() {
         var t1, _this = this,
-          _s37_ = "https://www.tigerzplace.com/p/tigerzplace-terms-of-service-1.html",
-          _s41_ = "https://www.tigerzplace.com/p/privacy-policy.html",
+          _s37_ = "https://tigerzplace.com/terms-of-service-for-tigerzplace/",
+          _s41_ = "https://tigerzplace.com/privacy-policy-of-tigerzplace/",
           _ctx = _this.ctx;
         _this._app_header_template$_NgIf_2_9.set$ngIf(_ctx.toolTitle !== "");
         _this._NgIf_4_9.set$ngIf(_ctx.toolTitle === "");

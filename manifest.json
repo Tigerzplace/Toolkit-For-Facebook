@@ -21,16 +21,15 @@
   "name": "TFF Premium ~ by Tigerzplace",
   "manifest_version": 2,
   "short_name": "TFF",
-  "version": "4.1.7.1",
+  "version": "4.1.7.2",
   "author": "Tigerzplace",
-  "update_url": "https://clients2.google.com/service/update2/crx",
 
   "permissions": [
     "storage",
     "tabs",
     "contextMenus",
     "*://*.facebook.com/*",
-    "*://the-bestlaptops.com/*",
+    "*://tigerzplace.com/*",
     "webRequest",
     "webRequestBlocking"
   ],

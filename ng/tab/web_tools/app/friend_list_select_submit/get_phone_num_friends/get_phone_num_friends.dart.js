@@ -17191,7 +17191,7 @@
     s.href=r.cv("https://www.tigerzplace.com")
     s=u.x
     r=$.bZ.c
-    s.href=r.cv("https://www.tigerzplace.com/p/privacy-policy.html")}},
+    s.href=r.cv("https://tigerzplace.com/privacy-policy-of-tigerzplace/")}},
     $ap:function(){return[R.fY]}}
     S.dI.prototype={}
     Z.t6.prototype={

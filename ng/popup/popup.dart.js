@@ -22544,7 +22544,7 @@
       },
       detectChangesInternal$0: function() {
         var t1, _this = this,
-          _s46_ = "https://www.tigerzplace.com/p/contact.html";
+          _s46_ = "https://tigerzplace.com/contact-tigerzplace-admin/";
         _this.ctx.productAndLegalEntityDetail.toString;
         t1 = _this._header_navigation_template$_expr_0;
         if (t1 !== _s46_) {
@@ -22569,7 +22569,7 @@
       },
       detectChangesInternal$0: function() {
         var t1, _this = this,
-          _s37_ = "https://www.tigerzplace.com/p/tigerzplace-terms-of-service-1.html";
+          _s37_ = "https://tigerzplace.com/terms-of-service-for-tigerzplace/";
         _this.ctx.productAndLegalEntityDetail.legalEntityDetail.toString;
         t1 = _this._header_navigation_template$_expr_0;
         if (t1 !== _s37_) {
